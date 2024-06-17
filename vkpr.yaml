@@ -1,0 +1,19 @@
+global:
+  domain: vkpr.platform.vee.codes
+  secure: true    
+  provider: aws
+  ingressClassName: kong  
+cert-manager:
+  hostedZoneID: Z08737613ML5F3HE67WJ3    
+  enabled: true
+  email: email@sample.com 
+  issuer:
+    type: "staging"
+    solver: "DNS01" 
+external-dns:
+  enabled: true  
+kong: 
+  enabled: true
+  basic_auth: true
+  mode: standard
+
